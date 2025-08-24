@@ -1,29 +1,49 @@
 {
   "expo": {
-    "name": "VeritasApp",
-    "slug": "VeritasApp",
+    "name": "Veritas",
+    "slug": "veritas-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.veritas.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.veritas.app",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "bundler": "webpack",
+      "output": "static",
+      "template": "./web/index.html",
+      "name": "Veritas",
+      "description": "Veritas - Personal AI analyst providing verifiable truth about products through blockchain-verified analysis",
+      "lang": "en",
+      "scope": "/",
+      "themeColor": "#3b82f6",
+      "backgroundColor": "#f8f9fa"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
   }
 }

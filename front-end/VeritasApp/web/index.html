@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veritas - Digital Asset Verification</title>
+    <meta name="description" content="Verify and secure your digital assets on the XION blockchain with AI-powered analysis and immutable proof" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/icon.png">
+    
+    <!-- React Native Web Critical CSS -->
+    <style>
+      /* Force all containers to allow scrolling */
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #root {
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #root > div {
+        min-height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      /* Force React Native components to scroll */
+      [data-rn-safe-area-view] {
+        height: 100% !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      [data-rn-scroll-view] {
+        height: 100% !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      [data-rn-view] {
+        overflow-y: visible !important;
+        overflow-x: hidden !important;
+      }
+
+      /* Force HTML div scrolling to work */
+      div {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      /* Ensure the main container div scrolls */
+      #root > div > div {
+        height: 100vh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      /* Ensure scrollbars are visible */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+      /* Loading spinner */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 18px;
+        color: #666;
+      }
+      
+      .loading::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        border: 2px solid #ddd;
+        border-top-color: #3b82f6;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <noscript>
+      <div style="padding: 20px; text-align: center; font-family: sans-serif;">
+        <h2>JavaScript Required</h2>
+        <p>This application requires JavaScript to run. Please enable JavaScript in your browser.</p>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <div class="loading">Loading Veritas App</div>
+    </div>
+    
+    <!-- App bundle will be injected here by Expo/Metro -->
+  </body>
+</html>
