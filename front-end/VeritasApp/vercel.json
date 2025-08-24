@@ -1,5 +1,5 @@
 {
-  "description": "Veritas Expo Web App - Digital Asset Verification Platform",
+  
   "buildCommand": "npx expo export:web",
   "outputDirectory": "web-build",
   "installCommand": "npm install",
