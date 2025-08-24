@@ -30,8 +30,8 @@
       ]
     },
     "web": {
-      "bundler": "webpack",
-      "output": "static",
+      "bundler": "metro",
+      "output": "single",
       "template": "./web/index.html",
       "name": "Veritas",
       "description": "Veritas - Personal AI analyst providing verifiable truth about products through blockchain-verified analysis",
