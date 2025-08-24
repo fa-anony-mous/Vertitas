@@ -1,0 +1,63 @@
+{
+  "name": "veritasapp",
+  "version": "1.0.0",
+  "description": "Veritas - Personal AI analyst providing verifiable truth about products through blockchain-verified analysis",
+  "main": "index.ts",
+  "keywords": [
+    "veritas",
+    "ai",
+    "blockchain",
+    "product-analysis",
+    "react-native",
+    "expo"
+  ],
+  "author": "Veritas Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:android": "expo build:android",
+    "build:ios": "expo build:ios",
+    "build:web": "expo build:web",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/stack": "^7.4.7",
+    "@tamagui/animations-react-native": "^1.132.20",
+    "@tamagui/config": "^1.74.0",
+    "@tamagui/core": "^1.74.0",
+    "@tamagui/shorthands": "^1.74.0",
+    "@tamagui/theme-base": "^1.74.0",
+    "@tamagui/themes": "^1.132.20",
+    "axios": "^1.11.0",
+    "expo": "^53.0.22",
+    "expo-linking": "~7.1.7",
+    "expo-status-bar": "~2.2.3",
+    "expo-web-browser": "~14.2.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-web": "^0.20.0",
+    "react-native-webview": "^13.13.5",
+    "tamagui": "^1.74.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/runtime": "^7.28.3",
+    "@tamagui/babel-plugin": "^1.74.0",
+    "@types/react": "~19.0.10",
+    "@types/react-native": "^0.73.0",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}
