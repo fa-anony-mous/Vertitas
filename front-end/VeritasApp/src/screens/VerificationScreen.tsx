@@ -539,6 +539,116 @@ export const VerificationScreen: React.FC = () => {
           </Text>
         </View>
       </View>
+
+      {/* Embedded Example Section */}
+      <View style={styles.embeddedExampleSection}>
+        <Text style={styles.sectionHeader}>Live Example Receipt</Text>
+        <View style={styles.embeddedExampleCard}>
+          <Text style={styles.embeddedExampleTitle}>📄 Sample Receipt for Testing</Text>
+          <View style={styles.embeddedExampleContent}>
+            <Text style={styles.embeddedExampleText}>
+              🎨 Canva Pro Subscription{'\n'}
+              ========================{'\n\n'}
+              Product: Canva Pro Annual Subscription{'\n'}
+              Amount: $119.99{'\n'}
+              Date: August 24, 2024{'\n'}
+              Vendor: Canva Inc.{'\n'}
+              Category: Software Subscription{'\n'}
+              Order ID: CAN-2024-0824-001{'\n\n'}
+              💡 Use this example to test the verification flow
+            </Text>
+          </View>
+        </View>
+      </View>
+
+      {/* Footer Section */}
+      <View style={styles.footerSection}>
+        <View style={styles.footerContent}>
+          <View style={styles.footerMain}>
+            <View style={styles.footerBrand}>
+              <Text style={styles.footerBrandIcon}>🛡️</Text>
+              <Text style={styles.footerBrandName}>Veritas</Text>
+              <Text style={styles.footerBrandTagline}>Digital Asset Verification Platform</Text>
+            </View>
+            
+            <View style={styles.footerLinks}>
+              <Text style={styles.footerLinksTitle}>Legal</Text>
+              <TouchableOpacity style={styles.footerLink}>
+                <Text style={styles.footerLinkText}>Privacy Policy</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.footerLink}>
+                <Text style={styles.footerLinkText}>Terms of Service</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.footerLink}>
+                <Text style={styles.footerLinkText}>Cookie Policy</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.footerLink}>
+                <Text style={styles.footerLinkText}>Accessibility</Text>
+              </TouchableOpacity>
+            </View>
+            
+                         <View style={styles.footerLinks}>
+               <Text style={styles.footerLinksTitle}>Resources</Text>
+               <TouchableOpacity 
+                 style={styles.footerLink}
+                 onPress={() => {
+                   if (Platform.OS === 'web') {
+                     window.open('https://github.com/fa-anony-mous/Vertitas/tree/main', '_blank');
+                   }
+                 }}
+               >
+                 <Text style={styles.footerLinkText}>GitHub Repository</Text>
+               </TouchableOpacity>
+               <TouchableOpacity style={styles.footerLink}>
+                 <Text style={styles.footerLinkText}>Documentation</Text>
+               </TouchableOpacity>
+               <TouchableOpacity style={styles.footerLink}>
+                 <Text style={styles.footerLinkText}>Support</Text>
+               </TouchableOpacity>
+             </View>
+             
+             <View style={styles.footerLinks}>
+               <Text style={styles.footerLinksTitle}>Contact</Text>
+               <TouchableOpacity 
+                 style={styles.footerLink}
+                 onPress={() => {
+                   if (Platform.OS === 'web') {
+                     window.open('mailto:sakethram9999@gmail.com', '_blank');
+                   }
+                 }}
+               >
+                 <Text style={styles.footerLinkText}>sakethram9999@gmail.com</Text>
+               </TouchableOpacity>
+               <TouchableOpacity style={styles.footerLink}>
+                 <Text style={styles.footerLinkText}>Report Issue</Text>
+               </TouchableOpacity>
+             </View>
+          </View>
+          
+          <View style={styles.footerBottom}>
+            <View style={styles.footerLegal}>
+              <Text style={styles.footerCopyright}>
+                © 2025 Veritas. All rights reserved.
+              </Text>
+              <Text style={styles.footerDisclaimer}>
+                For informational purposes only. Not financial advice.
+              </Text>
+            </View>
+            
+            <View style={styles.footerSocial}>
+              <TouchableOpacity style={styles.footerSocialLink}>
+                <Text style={styles.footerSocialIcon}>🐙</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.footerSocialLink}>
+                <Text style={styles.footerSocialIcon}>🐦</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.footerSocialLink}>
+                <Text style={styles.footerSocialIcon}>💼</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </View>
     </View>
   );
 
@@ -1089,5 +1199,126 @@ const styles = StyleSheet.create({
     color: '#1e40af',
     textAlign: 'center',
     fontStyle: 'italic',
+  },
+  
+  // Embedded Example Section Styles
+  embeddedExampleSection: {
+    padding: 20,
+  },
+  embeddedExampleCard: {
+    backgroundColor: 'white',
+    borderRadius: 16,
+    padding: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  embeddedExampleTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#111827',
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  embeddedExampleContent: {
+    backgroundColor: '#f8f9fa',
+    padding: 16,
+    borderRadius: 8,
+  },
+  embeddedExampleText: {
+    fontSize: 12,
+    color: '#374151',
+    fontFamily: 'monospace',
+    lineHeight: 18,
+  },
+  
+  // Footer Section Styles
+  footerSection: {
+    backgroundColor: '#1f2937',
+    marginTop: 40,
+  },
+  footerContent: {
+    padding: 40,
+  },
+  footerMain: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 32,
+  },
+  footerBrand: {
+    flex: 1,
+    marginRight: 40,
+  },
+  footerBrandIcon: {
+    fontSize: 32,
+    marginBottom: 12,
+  },
+  footerBrandName: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: 8,
+  },
+  footerBrandTagline: {
+    fontSize: 14,
+    color: '#9ca3af',
+    lineHeight: 20,
+  },
+  footerLinks: {
+    marginLeft: 20,
+  },
+  footerLinksTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
+    marginBottom: 16,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  footerLink: {
+    marginBottom: 8,
+  },
+  footerLinkText: {
+    fontSize: 14,
+    color: '#d1d5db',
+    textDecorationLine: 'underline',
+  },
+  footerBottom: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingTop: 24,
+    borderTopWidth: 1,
+    borderTopColor: '#374151',
+  },
+  footerLegal: {
+    flex: 1,
+  },
+  footerCopyright: {
+    fontSize: 14,
+    color: '#9ca3af',
+    marginBottom: 4,
+  },
+  footerDisclaimer: {
+    fontSize: 12,
+    color: '#6b7280',
+    fontStyle: 'italic',
+  },
+  footerSocial: {
+    flexDirection: 'row',
+  },
+  footerSocialLink: {
+    width: 40,
+    height: 40,
+    backgroundColor: '#374151',
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 16,
+  },
+  footerSocialIcon: {
+    fontSize: 18,
   },
 });
